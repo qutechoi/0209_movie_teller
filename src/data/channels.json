@@ -2,7 +2,7 @@
   {
     "id": "kr_001",
     "name": "지무비 : G Movie",
-    "url": "https://www.youtube.com/@Awesomemovie",
+    "url": "https://www.youtube.com/@지무비",
     "lang": "ko",
     "genres": ["액션", "스릴러", "드라마"],
     "tone": ["몰입감", "유쾌", "속도감"],
@@ -15,7 +15,7 @@
   {
     "id": "kr_002",
     "name": "고몽",
-    "url": "https://www.youtube.com/@Gomong",
+    "url": "https://www.youtube.com/@고몽",
     "lang": "ko",
     "genres": ["블록버스터", "판타지", "드라마"],
     "tone": ["재치", "에너지", "대중적"],
@@ -28,7 +28,7 @@
   {
     "id": "kr_003",
     "name": "김시선",
-    "url": "https://www.youtube.com/@kimsiseon",
+    "url": "https://www.youtube.com/@김시선",
     "lang": "ko",
     "genres": ["예술", "로맨스", "미스터리"],
     "tone": ["감성", "차분", "나긋나긋"],
@@ -40,8 +40,8 @@
   },
   {
     "id": "kr_004",
-    "name": "이동진의 파이아키",
-    "url": "https://www.youtube.com/@piaarkie",
+    "name": "이동진의 파이아키아",
+    "url": "https://www.youtube.com/@Btv이동진의파이아키아",
     "lang": "ko",
     "genres": ["전체", "예술", "고전"],
     "tone": ["지적", "진지", "전문적"],
@@ -67,7 +67,7 @@
   {
     "id": "kr_006",
     "name": "빨강도깨비",
-    "url": "https://www.youtube.com/@red_dokkaebi",
+    "url": "https://www.youtube.com/@빨강도깨비",
     "lang": "ko",
     "genres": ["히어로", "SF", "블록버스터"],
     "tone": ["분석적", "깔끔", "정보성"],
@@ -80,7 +80,7 @@
   {
     "id": "kr_007",
     "name": "삐맨",
-    "url": "https://www.youtube.com/@B-Man",
+    "url": "https://www.youtube.com/@BMan삐맨",
     "lang": "ko",
     "genres": ["히어로", "코믹스", "SF"],
     "tone": ["덕후", "정보성", "빠름"],
@@ -93,7 +93,7 @@
   {
     "id": "kr_008",
     "name": "거의없다",
-    "url": "https://www.youtube.com/@almost_heroes",
+    "url": "https://www.youtube.com/@almostnohere",
     "lang": "ko",
     "genres": ["망작", "B급", "액션"],
     "tone": ["신랄", "풍자", "사이다"],
@@ -106,7 +106,7 @@
   {
     "id": "kr_009",
     "name": "발없는새",
-    "url": "https://www.youtube.com/@feetlessbird",
+    "url": "https://www.youtube.com/@발없는새",
     "lang": "ko",
     "genres": ["8090", "블록버스터", "인물"],
     "tone": ["중후", "신뢰", "차분"],
@@ -119,7 +119,7 @@
   {
     "id": "kr_010",
     "name": "리뷰엉이",
-    "url": "https://www.youtube.com/@Owlsreview",
+    "url": "https://www.youtube.com/@리뷰엉이",
     "lang": "ko",
     "genres": ["SF", "과학", "우주"],
     "tone": ["지적", "교육적", "호기심"],
@@ -132,7 +132,7 @@
   {
     "id": "kr_011",
     "name": "민호타우르스",
-    "url": "https://www.youtube.com/@minhotaur",
+    "url": "https://www.youtube.com/@민호타우르스",
     "lang": "ko",
     "genres": ["사회", "스릴러", "드라마"],
     "tone": ["진지", "분석적", "논리적"],
@@ -145,7 +145,7 @@
   {
     "id": "kr_012",
     "name": "무비트립",
-    "url": "https://www.youtube.com/@movietrip",
+    "url": "https://www.youtube.com/@movietrip무비트립",
     "lang": "ko",
     "genres": ["명작", "드라마", "감동"],
     "tone": ["따뜻", "회상", "편안"],
@@ -158,7 +158,7 @@
   {
     "id": "kr_013",
     "name": "영민하다",
-    "url": "https://www.youtube.com/@youngminhada",
+    "url": "https://www.youtube.com/@영민하다",
     "lang": "ko",
     "genres": ["공포", "기담", "미스터리"],
     "tone": ["오싹", "차분", "스토리"],
@@ -171,7 +171,7 @@
   {
     "id": "kr_014",
     "name": "라이너",
-    "url": "https://www.youtube.com/@LinerMovie",
+    "url": "https://www.youtube.com/@라이너의컬쳐쇼크",
     "lang": "ko",
     "genres": ["블록버스터", "이슈", "드라마"],
     "tone": ["직설", "비판", "솔직"],
@@ -184,7 +184,7 @@
   {
     "id": "kr_015",
     "name": "백수골방",
-    "url": "https://www.youtube.com/@baeksu_golbang",
+    "url": "https://www.youtube.com/@imyouralba",
     "lang": "ko",
     "genres": ["애니메이션", "성장", "드라마"],
     "tone": ["인문학", "성찰", "잔잔"],
@@ -197,7 +197,7 @@
   {
     "id": "kr_016",
     "name": "엉준",
-    "url": "https://www.youtube.com/@ungjun",
+    "url": "https://www.youtube.com/@ungjune",
     "lang": "ko",
     "genres": ["전쟁", "밀리터리", "역사"],
     "tone": ["전문적", "남성적", "정보성"],
@@ -210,7 +210,7 @@
   {
     "id": "kr_017",
     "name": "홍시네마",
-    "url": "https://www.youtube.com/@HongCinema",
+    "url": "https://www.youtube.com/@HONG_CINEMA",
     "lang": "ko",
     "genres": ["가족", "코미디", "드라마"],
     "tone": ["밝음", "경쾌", "가족적"],
@@ -223,7 +223,7 @@
   {
     "id": "kr_018",
     "name": "드림텔러",
-    "url": "https://www.youtube.com/@DreamTeller",
+    "url": "https://www.youtube.com/@드림텔러DREAMTELLER",
     "lang": "ko",
     "genres": ["판타지", "SF", "해리포터"],
     "tone": ["몽환", "친절", "디테일"],
@@ -236,7 +236,7 @@
   {
     "id": "kr_019",
     "name": "튜나",
-    "url": "https://www.youtube.com/@Tuna_Movie",
+    "url": "https://www.youtube.com/@taefal0724",
     "lang": "ko",
     "genres": ["킬링타임", "액션", "범죄"],
     "tone": ["시원", "속도감", "오락"],
