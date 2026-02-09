@@ -1,0 +1,66 @@
+[
+  {
+    "id": "movie-1",
+    "title": "Neon Horizon",
+    "year": "2024",
+    "genre": "Sci-Fi",
+    "posterUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuArIoPZZ56Dt6ed7YPV00LajiAbphx2Qz1eoF3Ooe_d0Zsq2U2wU8Mi4_Io64aFXVAFAUpDScF7-lCcV_O4Hw0g5SgzJMeo4sMINd4veuLBeCZNUyagqRd9qpazyaKJQF8X4PbJ2TCe4kCGBxNMUQCkWhp8k_XThiDamZLFRpUC1T47PZCArNXII-5DWwcaA_MYcyk_49b_pN7h3Sr5_FXcdlC0srvDe3ms99BFF9aVTgJz85dFFUxEF18oQUY2kVDSRsExDVyx4sI",
+    "altText": "Futuristic sci-fi cityscape movie poster"
+  },
+  {
+    "id": "movie-2",
+    "title": "Midnight Shadow",
+    "year": "2023",
+    "genre": "Noir",
+    "posterUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzT-EnBCdUqBjyPkr5DA6Hu0kQwck0yq9yaBip6h9itEoLixZLd2eFdomjQV5SUEW3Pw2uXD744cBSI6Q3vTLlFCMU-WO0aJsiRhHxbvaqsPwPWnn7ylA1OaKpPmfQ62qXgr8k2J-uCVLGxum0eG6QAE37HZaQvc-Iu8unuNkF9dtYA45c1NYWb5xtw4QfOzPxkdNeVNXJ5b48V4UJGSk3Xab8ZzlpqRo-ty6La3zYOdcwl4KopG1-NQH-JAIFDP0kCjvMqmazJZA",
+    "altText": "Classic black and white film noir scene"
+  },
+  {
+    "id": "movie-3",
+    "title": "Prism Flow",
+    "year": "2024",
+    "genre": "Indie",
+    "posterUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKSvkRNR7HmQGROwrU6lcmZeTilNJIuMPssfF8x0Rjd9zICz2gq_AIANynfw0umHIQOKDZRgGh57ndtHTGqRCC9n-bnD16gmDz6d5WGvoDPnaKdwvfoNAW0RCXcnIignKeVkuvE-wBkJwY0wxtNdFHK3h2ZP1B7cQ4yghLjzMSKIFBPGJjj8HmemFf_szcr2wstUUU8dHyDDDsHx_XqJd7JoSzhrdAdxy9U_BG8wE4iaaAtOu9fT_37rolTuIxGQH2A9mwYTq1Zeg",
+    "altText": "Abstract colorful cinematic lens flare"
+  },
+  {
+    "id": "movie-4",
+    "title": "Inner Chaos",
+    "year": "2022",
+    "genre": "Thriller",
+    "posterUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5GbVTfkt9F3HYSdvx4WxSVl__NlSer3z9BTXkM7ZgpvXeWw3MhmC0WNUcUibflmj5fP3TUVFqHXBc24Gq7rtqn1c0QNUYa4Oem6e-3U9GSVlBVDGhh5H4LIGhN606kdb8t_7EN3iN5UGXvWNXN99_9W6FzPIX_I2uP2YbFvYg7caEWAVR6b541rp9ej7XgXKGcqTJfdj_II5VOA_gV2sgp8LMIQzZG5GJzYqkPW8dQu8MIJVz3-VT-9Hh9fthp4P0QLAcVk0tqP8",
+    "altText": "Intense dramatic facial close up movie poster"
+  },
+  {
+    "id": "movie-5",
+    "title": "Velocity High",
+    "year": "2024",
+    "genre": "Action",
+    "posterUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBtuF-rmvSpEXz94P0ikLkAraOwTqrpm-l3CzWzv0kjNruYf9E398FgFhZwpBQC7Xf-zMWIUdaDN1tnChj2D1uZ57u6j6eHrKJkkM7vI4o_Mm5T2QYRfG29NBhBMRqke5CTZdSAJEaxpb_eYYIKPgO2hQCCjr5COeXCdRta_241ssi7518kAFwr5vyYutJy2OcTtRP65Iv034dmK5pedovBsYRQ3GDWkxah4gjXx5c7rqTxnog8G1gWL5Zuaz7zW1uXoRAu9VGXBps",
+    "altText": "Action movie explosion stunt scene"
+  },
+  {
+    "id": "movie-6",
+    "title": "Eternal Sunset",
+    "year": "2023",
+    "genre": "Romance",
+    "posterUrl": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+    "altText": "Romantic sunset scene"
+  },
+  {
+    "id": "movie-7",
+    "title": "Dark Descent",
+    "year": "2024",
+    "genre": "Horror",
+    "posterUrl": "https://images.unsplash.com/photo-1509281373149-e957c6296406?w=400&h=600&fit=crop",
+    "altText": "Dark horror atmosphere"
+  },
+  {
+    "id": "movie-8",
+    "title": "Laugh Out Loud",
+    "year": "2023",
+    "genre": "Comedy",
+    "posterUrl": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+    "altText": "Comedy movie scene"
+  }
+]

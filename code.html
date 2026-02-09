@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Taste Discovery - Cinematic DNA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c2bee",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#0a070e",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Spline Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .movie-card-selected {
+            border: 2px solid #8c2bee;
+            box-shadow: 0 0 15px rgba(140, 43, 238, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased">
+<!-- Main Container (Mobile Form Factor) -->
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-32">
+<!-- Top App Bar & Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="flex items-center p-4 justify-between">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</button>
+<h2 class="text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Onboarding</h2>
+</div>
+<!-- Progress Section -->
+<div class="flex flex-col gap-2 px-6 pb-4">
+<div class="flex justify-between items-end">
+<p class="text-sm font-semibold text-primary uppercase tracking-widest">Step 2 of 5</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">60% Complete</p>
+</div>
+<div class="h-1.5 w-full rounded-full bg-slate-200 dark:bg-white/10 overflow-hidden">
+<div class="h-full rounded-full bg-primary transition-all duration-500" style="width: 60%;"></div>
+</div>
+</div>
+</header>
+<!-- Hero Content -->
+<main class="flex flex-col px-6 pt-4">
+<div class="mb-8">
+<h1 class="text-3xl font-bold leading-tight tracking-tight mb-2">Discover Your <span class="text-primary">Cinematic DNA</span></h1>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
+                    Select at least 5 movies or genres you love to help our AI find your perfect match.
+                </p>
+</div>
+<!-- Genre Tags Cloud -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">Popular Genres</h3>
+<span class="text-xs text-primary font-medium">View All</span>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-5 shadow-lg shadow-primary/20">
+<span class="text-white text-sm font-semibold">Sci-Fi</span>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-white/5 border border-transparent dark:border-white/10 px-5">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium">Noir</span>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-white/5 border border-transparent dark:border-white/10 px-5">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium">Indie</span>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-white/5 border border-transparent dark:border-white/10 px-5">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium">Blockbuster</span>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 border border-primary/30 px-5">
+<span class="text-primary text-sm font-semibold">Psychological</span>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-white/5 border border-transparent dark:border-white/10 px-5">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium">90s Nostalgia</span>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-white/5 border border-transparent dark:border-white/10 px-5">
+<span class="text-slate-700 dark:text-slate-200 text-sm font-medium">Thriller</span>
+</div>
+</div>
+</section>
+<!-- Movie Grid -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500">Suggested For You</h3>
+<div class="flex items-center text-primary text-sm font-medium">
+<span class="material-symbols-outlined text-lg mr-1">search</span>
+                        Search
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Movie Card 1 (Selected) -->
+<div class="relative group cursor-pointer">
+<div class="aspect-[2/3] w-full overflow-hidden rounded-xl border-2 border-primary ring-4 ring-primary/20">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Futuristic sci-fi cityscape movie poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArIoPZZ56Dt6ed7YPV00LajiAbphx2Qz1eoF3Ooe_d0Zsq2U2wU8Mi4_Io64aFXVAFAUpDScF7-lCcV_O4Hw0g5SgzJMeo4sMINd4veuLBeCZNUyagqRd9qpazyaKJQF8X4PbJ2TCe4kCGBxNMUQCkWhp8k_XThiDamZLFRpUC1T47PZCArNXII-5DWwcaA_MYcyk_49b_pN7h3Sr5_FXcdlC0srvDe3ms99BFF9aVTgJz85dFFUxEF18oQUY2kVDSRsExDVyx4sI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 flex size-6 items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+</div>
+<div class="mt-2">
+<h4 class="text-sm font-bold truncate">Neon Horizon</h4>
+<p class="text-xs text-slate-500">2024 • Sci-Fi</p>
+</div>
+</div>
+<!-- Movie Card 2 -->
+<div class="relative group cursor-pointer">
+<div class="aspect-[2/3] w-full overflow-hidden rounded-xl border-2 border-transparent hover:border-white/20 transition-all">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Classic black and white film noir scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzT-EnBCdUqBjyPkr5DA6Hu0kQwck0yq9yaBip6h9itEoLixZLd2eFdomjQV5SUEW3Pw2uXD744cBSI6Q3vTLlFCMU-WO0aJsiRhHxbvaqsPwPWnn7ylA1OaKpPmfQ62qXgr8k2J-uCVLGxum0eG6QAE37HZaQvc-Iu8unuNkF9dtYA45c1NYWb5xtw4QfOzPxkdNeVNXJ5b48V4UJGSk3Xab8ZzlpqRo-ty6La3zYOdcwl4KopG1-NQH-JAIFDP0kCjvMqmazJZA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+</div>
+<div class="mt-2">
+<h4 class="text-sm font-bold truncate">Midnight Shadow</h4>
+<p class="text-xs text-slate-500">2023 • Noir</p>
+</div>
+</div>
+<!-- Movie Card 3 -->
+<div class="relative group cursor-pointer">
+<div class="aspect-[2/3] w-full overflow-hidden rounded-xl border-2 border-transparent hover:border-white/20 transition-all">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract colorful cinematic lens flare" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKSvkRNR7HmQGROwrU6lcmZeTilNJIuMPssfF8x0Rjd9zICz2gq_AIANynfw0umHIQOKDZRgGh57ndtHTGqRCC9n-bnD16gmDz6d5WGvoDPnaKdwvfoNAW0RCXcnIignKeVkuvE-wBkJwY0wxtNdFHK3h2ZP1B7cQ4yghLjzMSKIFBPGJjj8HmemFf_szcr2wstUUU8dHyDDDsHx_XqJd7JoSzhrdAdxy9U_BG8wE4iaaAtOu9fT_37rolTuIxGQH2A9mwYTq1Zeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+</div>
+<div class="mt-2">
+<h4 class="text-sm font-bold truncate">Prism Flow</h4>
+<p class="text-xs text-slate-500">2024 • Indie</p>
+</div>
+</div>
+<!-- Movie Card 4 (Selected) -->
+<div class="relative group cursor-pointer">
+<div class="aspect-[2/3] w-full overflow-hidden rounded-xl border-2 border-primary ring-4 ring-primary/20">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Intense dramatic facial close up movie poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5GbVTfkt9F3HYSdvx4WxSVl__NlSer3z9BTXkM7ZgpvXeWw3MhmC0WNUcUibflmj5fP3TUVFqHXBc24Gq7rtqn1c0QNUYa4Oem6e-3U9GSVlBVDGhh5H4LIGhN606kdb8t_7EN3iN5UGXvWNXN99_9W6FzPIX_I2uP2YbFvYg7caEWAVR6b541rp9ej7XgXKGcqTJfdj_II5VOA_gV2sgp8LMIQzZG5GJzYqkPW8dQu8MIJVz3-VT-9Hh9fthp4P0QLAcVk0tqP8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 flex size-6 items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+</div>
+<div class="mt-2">
+<h4 class="text-sm font-bold truncate">Inner Chaos</h4>
+<p class="text-xs text-slate-500">2022 • Thriller</p>
+</div>
+</div>
+<!-- Movie Card 5 -->
+<div class="relative group cursor-pointer">
+<div class="aspect-[2/3] w-full overflow-hidden rounded-xl border-2 border-transparent hover:border-white/20 transition-all">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Action movie explosion stunt scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtuF-rmvSpEXz94P0ikLkAraOwTqrpm-l3CzWzv0kjNruYf9E398FgFhZwpBQC7Xf-zMWIUdaDN1tnChj2D1uZ57u6j6eHrKJkkM7vI4o_Mm5T2QYRfG29NBhBMRqke5CTZdSAJEaxpb_eYYIKPgO2hQCCjr5COeXCdRta_241ssi7518kAFwr5vyYutJy2OcTtRP65Iv034dmK5pedovBsYRQ3GDWkxah4gjXx5c7rqTxnog8G1gWL5Zuaz7zW1uXoRAu9VGXBps"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+</div>
+<div class="mt-2">
+<h4 class="text-sm font-bold truncate">Velocity High</h4>
+<p class="text-xs text-slate-500">2024 • Action</p>
+</div>
+</div>
+<!-- Movie Card 6 -->
+<div class="relative group cursor-pointer">
+<div class="aspect-[2/3] w-full overflow-hidden rounded-xl border-2 border-transparent hover:border-white/20 transition-all">
+<div class="flex h-full w-full items-center justify-center bg-slate-200 dark:bg-white/5 border-2 border-dashed border-slate-300 dark:border-white/10">
+<span class="material-symbols-outlined text-4xl text-slate-400">add_circle</span>
+</div>
+</div>
+<div class="mt-2">
+<h4 class="text-sm font-bold truncate">Find More</h4>
+<p class="text-xs text-slate-500">Search library</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Action Bar (Floating) -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-light via-background-light dark:from-background-dark dark:via-background-dark/95 to-transparent pt-12">
+<div class="flex flex-col gap-4 max-w-md mx-auto">
+<div class="flex justify-center">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-sm fill-1">genetics</span>
+<span class="text-xs font-bold text-primary uppercase tracking-tight">2 / 5 Selected</span>
+</div>
+</div>
+<button class="w-full h-14 bg-primary hover:bg-primary/90 text-white rounded-full font-bold text-lg flex items-center justify-center gap-2 shadow-xl shadow-primary/30 active:scale-95 transition-all">
+<span>Analyze My Taste</span>
+<span class="material-symbols-outlined">auto_awesome</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
