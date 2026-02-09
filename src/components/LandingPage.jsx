@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
-import { t } from '../i18n';
-
-const GENRES = [
-  '액션', '로맨스', '스릴러', '호러', '코미디', '애니메이션', '드라마', 'SF', '판타지', '다큐', '고전', '블록버스터'
-];
-const TONES = ['차분', '유쾌', '진지', '속도감', '지적', '감성', '분석적'];
-const SPOILERS = [
-  { value: 'no_spoiler', label: '결말 없이 감상(무스포)' },
-  { value: 'light', label: '약한 스포일러' },
-  { value: 'full', label: '결말 포함' },
-];
+import { t, GENRE_OPTIONS, TONE_OPTIONS, SPOILER_OPTIONS } from '../i18n';
 
 function LandingPage({ onSubmit, lang, onLangChange }) {
-  const [genre, setGenre] = useState(GENRES[0]);
-  const [tone, setTone] = useState(TONES[0]);
-  const [spoilerPolicy, setSpoilerPolicy] = useState(SPOILERS[0].value);
+  const genres = GENRE_OPTIONS[lang] || GENRE_OPTIONS.ko;
+  const tones = TONE_OPTIONS[lang] || TONE_OPTIONS.ko;
+  const spoilers = SPOILER_OPTIONS[lang] || SPOILER_OPTIONS.ko;
+
+  const [genre, setGenre] = useState(genres[0].key);
+  const [tone, setTone] = useState(tones[0].key);
+  const [spoilerPolicy, setSpoilerPolicy] = useState(spoilers[0].key);
 
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased min-h-screen">
@@ -76,19 +70,19 @@ function LandingPage({ onSubmit, lang, onLangChange }) {
               {t(lang, 'genre')}
             </h3>
             <div className="flex gap-2 flex-wrap">
-              {GENRES.map((g) => {
-                const isSelected = genre === g;
+              {genres.map((g) => {
+                const isSelected = genre === g.key;
                 return (
                   <button
-                    key={g}
-                    onClick={() => setGenre(g)}
+                    key={g.key}
+                    onClick={() => setGenre(g.key)}
                     className={`px-5 h-10 rounded-full text-sm font-medium transition-all ${
                       isSelected
                         ? 'bg-primary text-white shadow-lg shadow-primary/20'
                         : 'bg-slate-200 dark:bg-white/5 text-slate-700 dark:text-slate-200 border border-transparent dark:border-white/10'
                     }`}
                   >
-                    {g}
+                    {g.label}
                   </button>
                 );
               })}
@@ -101,19 +95,19 @@ function LandingPage({ onSubmit, lang, onLangChange }) {
               {t(lang, 'tone')}
             </h3>
             <div className="flex gap-2 flex-wrap">
-              {TONES.map((t_val) => {
-                const isSelected = tone === t_val;
+              {tones.map((t_val) => {
+                const isSelected = tone === t_val.key;
                 return (
                   <button
-                    key={t_val}
-                    onClick={() => setTone(t_val)}
+                    key={t_val.key}
+                    onClick={() => setTone(t_val.key)}
                     className={`px-5 h-10 rounded-full text-sm font-medium transition-all ${
                       isSelected
                         ? 'bg-primary text-white shadow-lg shadow-primary/20'
                         : 'bg-slate-200 dark:bg-white/5 text-slate-700 dark:text-slate-200 border border-transparent dark:border-white/10'
                     }`}
                   >
-                    {t_val}
+                    {t_val.label}
                   </button>
                 );
               })}
@@ -126,12 +120,12 @@ function LandingPage({ onSubmit, lang, onLangChange }) {
               {t(lang, 'spoiler')}
             </h3>
             <div className="flex gap-2 flex-wrap">
-              {SPOILERS.map((s) => {
-                const isSelected = spoilerPolicy === s.value;
+              {spoilers.map((s) => {
+                const isSelected = spoilerPolicy === s.key;
                 return (
                   <button
-                    key={s.value}
-                    onClick={() => setSpoilerPolicy(s.value)}
+                    key={s.key}
+                    onClick={() => setSpoilerPolicy(s.key)}
                     className={`px-5 h-10 rounded-full text-sm font-medium transition-all ${
                       isSelected
                         ? 'bg-primary text-white shadow-lg shadow-primary/20'
