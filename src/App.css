@@ -1,15 +1,1 @@
-/* Legacy styles for ResultPage - will use Tailwind for new LandingPage */
-.results-title { font-size: 22px; font-weight: 800; margin-bottom: 16px; }
-.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-
-.channel .channel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-.channel-name { font-weight: 800; font-size: 16px; }
-.channel-summary { font-size: 13px; color: #c9d0da; margin-top: 6px; }
-.tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.tag { padding: 4px 8px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.15); font-size: 12px; }
-.tag.ghost { opacity: 0.7; }
-.reason { margin-top: 10px; font-size: 13px; color: #c9d0da; }
-
-@media (max-width: 720px) {
-  .grid { grid-template-columns: 1fr; }
-}
+/* All styles now handled by Tailwind CSS */

@@ -57,25 +57,29 @@ function App() {
     setLoading(true);
     try {
       const result = await recommendChannels({ ...prefs, channels, lang });
-      const mapped = (result.picks || []).map((p) => ({
-        channel: channels.find((c) => c.id === p.id),
-        reason: p.reason,
-      })).filter((p) => p.channel);
+      const mapped = (result.picks || []).map((p) => {
+        const channel = channels.find((c) => c.id === p.id);
+        if (!channel) return null;
 
-      // Check if any recommended channels have validation issues
-      if (validationResults) {
-        const recommendedIds = mapped.map(m => m.channel.id);
-        const problematicRecommended = validationResults.validatedChannels.filter(
-          c => recommendedIds.includes(c.id) && (c.status === 'suspicious' || c.status === 'invalid')
-        );
-
-        if (problematicRecommended.length > 0) {
-          console.warn('⚠️ Some recommended channels have URL issues:');
-          problematicRecommended.forEach(c => {
-            console.warn(`  - ${c.name}: ${c.reason}`);
-          });
+        // Apply validated URL if available
+        let validationStatus = null;
+        if (validationResults) {
+          const validated = validationResults.validatedChannels.find(
+            (vc) => vc.id === channel.id
+          );
+          if (validated) {
+            validationStatus = validated.status;
+            if (
+              (validated.status === 'suspicious' || validated.status === 'invalid') &&
+              validated.suggestedUrl
+            ) {
+              channel.url = validated.suggestedUrl;
+            }
+          }
         }
-      }
+
+        return { channel, reason: p.reason, validationStatus };
+      }).filter(Boolean);
 
       setPicks(mapped);
       setStep('result');
@@ -132,7 +136,7 @@ function App() {
       {step === 'form' ? (
         <LandingPage onSubmit={handleSubmit} lang={lang} onLangChange={setLang} />
       ) : (
-        <ResultPage picks={picks} onReset={handleReset} lang={lang} />
+        <ResultPage picks={picks} onReset={handleReset} lang={lang} onLangChange={setLang} />
       )}
     </>
   );
