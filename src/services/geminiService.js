@@ -38,9 +38,10 @@ export async function recommendChannels({ genre, tone, spoilerPolicy, lang, chan
     summary: c.summary,
   }));
 
+  const languageName = lang === 'en' ? 'English' : 'Korean';
   const prompt = `You are a movie channel recommender. Select 5 channels that best match the user's preferences.\n` +
-    `Return JSON only in Korean.\n` +
-    `User: genre=${genre}, tone=${tone}, spoilerPolicy=${spoilerPolicy}, lang=${lang}.\n` +
+    `Return JSON only in ${languageName}.\n` +
+    `User: genre=${genre}, tone=${tone}, spoilerPolicy=${spoilerPolicy}.\n` +
     `Channels: ${JSON.stringify(compact)}\n\n` +
     `Return format:\n{\n  "picks": [\n    {"id":"...","reason":"..."}\n  ]\n}`;
 
